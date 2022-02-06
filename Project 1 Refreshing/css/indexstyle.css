@@ -1,0 +1,157 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #f4f4f4;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+/*Header*/
+header{
+    background-color: #35424a;
+    border-bottom: orangered 2px solid;
+    color: white;
+    padding-top: 30px;
+    min-height: 70px;
+}
+header nav{
+    float: right;
+    margin-top: 1.5%;
+}
+
+header nav ul li{
+    display: inline;
+    padding: 0 15px 0 15px;
+} 
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+
+}
+header #brandname{
+    float: left;
+}
+header #brandname h1{
+    margin: 0;
+    padding: 0;
+}
+header .highlight, header #home a{
+    color: orangered;
+    font-weight: bold;
+}
+header a:hover, .hover a:hover, #home a:hover{
+    color: whitesmoke;
+    text-decoration: underline;
+}
+
+/*Showcase or Mid Title*/
+#showcase{
+    padding: 7% 30px 7% 30px;
+    background: url('../img/showcasebg.jpg') no-repeat;
+    color: white;
+    text-align: center;
+}
+
+#showcase h1{
+    font-size: 270%;
+}
+#showcase p{
+    padding: 0px 10px 0px 10px;
+}
+
+/*Newsletter*/
+#newsletter{
+    background-color: #35424a;
+    color: white;
+    padding: 10px;
+}
+
+#newsletter h1{
+    float: left;
+}
+#newsletter form{
+    float: right;
+    margin-top: 15px;
+}
+
+#newsletter input{
+    padding: 4px;
+    height: 25px;
+    width: 260px;
+}
+.subscribebutton{
+    color: white;
+    padding: 10px 17px 10px 17px;
+    background-color: orangered;
+    border: none;
+}
+
+/*3 Box or Table*/
+#boxes{
+    margin-top: 20px;
+    text-align: center;    
+}
+#boxes img{
+    width: 40%;
+}
+#boxes .grid{
+    float: left;
+    width: 29%;
+    padding: 10px;
+}
+
+
+/*Footer*/
+footer{
+    background-color: orangered;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+/*Media Quaries*/
+
+@media(max-width: 768px){
+    header #brandname, 
+    header nav, 
+    header nav li,
+    #newsletter h1,
+    #newsletter form,
+    #boxes .grid{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    header{
+        padding-bottom: 20px;
+    }
+
+    #showcase h1{
+        margin-top: 10px;
+    }
+
+    .subscribebutton{
+        display: block;
+        width: 100%;
+    }
+
+    #newsletter input{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+}
